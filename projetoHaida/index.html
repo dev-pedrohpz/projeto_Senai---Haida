@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haida</title>
+</head>
+<body>
+    <header>
+        <img src="./images/haida.png" alt="logo-Haida">
+        <button>Luz Clara</button>
+        <nav>
+            <li>Inicio</li>
+            <li>Trilhas</li>
+            <li>Sobre</li>
+            <li>Glossário</li>
+        </nav>
+    </header>
+    <main>
+        <h1>Escolha a sua trilha</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <button id="python1">Python</button>
+        <button id="botaoJS1">Javascript</button>
+        <button id="c++1">C++</button>
+        <button id="botaoCsharp1">C#</button>
+        <button id="ruby1">Ruby</button>
+        <button id="php1">PHP</button>
+        <button id="html1">HTML</button>
+        <button id="java1">Java</button>
+        <button id="css1">CSS</button>
+
+
+    </main>
+
+    <h1>Mais texto</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <footer>
+        <h3>Detalhes do site</h3>
+        <h3>Colocar créditos</h3>
+    </footer>
+    <script src="/arquivos js/Trilhas-haida.js"></script>
+   
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haida</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        header {
+            background-color: #1e293b;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        nav li {
+            transition: all 0.3s ease;
+        }
+        nav li:hover {
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+        .trilha-btn {
+            background-color: #1e293b;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .trilha-btn:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .theme-btn {
+            background-color: #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .theme-btn:hover {
+            background-color: #2563eb;
+        }
+        @media (max-width: 640px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .trilha-btn {
+                width: 100%;
+                padding: 0.75rem;
+                font-size: 1rem;
+            }
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .theme-btn {
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+        }
+        @media (min-width: 641px) and (max-width: 768px) {
+            .trilha-btn {
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="p-4 md:p-6">
+        <div class="header-container flex justify-between items-center max-w-7xl mx-auto">
+            <img src="./images/haida.png" alt="logo-Haida" class="h-12 md:h-16">
+            <button class="theme-btn px-4 py-2 rounded-lg text-white font-semibold text-sm md:text-base md:ml-auto md:mr-4">Luz Clara</button>
+            <nav class="flex gap-4 md:gap-8">
+                <li class="list-none cursor-pointer font-medium hover:text-blue-500">Inicio</li>
+                <li class="list-none cursor-pointer font-medium hover:text-blue-500">Trilhas</li>
+                <li class="list-none cursor-pointer font-medium hover:text-blue-500">Sobre</li>
+                <li class="list-none cursor-pointer font-medium hover:text-blue-500">Glossário</li>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto p-6 md:p-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">Escolha a sua trilha</h1>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <button id="python1" class="trilha-btn">Python</button>
+            <button id="botaoJS1" class="trilha-btn">Javascript</button>
+            <button id="c++1" class="trilha-btn">C++</button>
+            <button id="botaoCsharp1" class="trilha-btn">C#</button>
+            <button id="ruby1" class="trilha-btn">Ruby</button>
+            <button id="php1" class="trilha-btn">PHP</button>
+            <button id="html1" class="trilha-btn">HTML</button>
+            <button id="java1" class="trilha-btn">Java</button>
+            <button id="css1" class="trilha-btn">CSS</button>
+        </div>
+    </main>
+    <section class="max-w-7xl mx-auto p-6 md:p-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">Mais texto</h1>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+    </section>
+    <footer class="bg-gray-900 text-center p-6">
+        <h3 class="text-lg font-semibold mb-2">Detalhes do site</h3>
+        <h3 class="text-lg font-semibold">Colocar créditos</h3>
+    </footer>
+    <script src="/arquivos js/Trilhas-haida.js"></script>
+</body>
+</html>
