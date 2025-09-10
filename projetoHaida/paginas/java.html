@@ -4,41 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Road Map do Java</title>
+    <link rel="stylesheet" href="/projeto_Senai---Haida/projetoHaida/syles.css/paginas.css">
 </head>
 
 <body>
-    <header>
-        <img src="./images.linguagens/java.png" alt="logo-Haida">
-        <button id="botao-retornar">Retornar</button>
-        <button>Luz Clara</button>
-        <nav>
-            <li>Inicio</li>
-            <li>Trilhas</li>
-            <li>Sobre</li>
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="/projeto_Senai---Haida/projetoHaida/images/logohaida.jpg" alt="logo-Haida" class="logo">
+            <button id="botao-retornar">Retornar</button>
+        </div>
+      
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="trilhas.html">Trilhas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <h1>Bem vindo ao road map do JAVA</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <img src="" alt="imagem do js">
+    <main class="language-container">
+        <h1 class="language-title">Bem vindo ao road map do JAVA</h1>
+        <p class="language-description">Java é uma linguagem de programação orientada a objetos, portável e multiplataforma, criada pela Sun Microsystems em 1995 (atualmente mantida pela Oracle). É amplamente utilizada no desenvolvimento de aplicações corporativas, aplicativos Android, sistemas embarcados, jogos e softwares de grande escala.
 
-        <h3>Abaixo segue os links</h3>
-        <a class="botao-download" href="./pdfsTrilhas/java.pdf" download="java.pdf">Trilha</a>
-        <a class="botao-download"
-            href="https://youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR&si=ptTk8DO0A9Sjw1KI"
-            target="_blank">Playlist</a>
-        <a class="botao-download" href="./glossarios.linguagens/Glossario_C++.pdf"
-            download="Glossario_C++.pdf">Glossário</a>
+Um dos principais lemas do Java é:
+"Escreva uma vez, execute em qualquer lugar" (Write Once, Run Anywhere – WORA), graças à Java Virtual Machine (JVM), que permite executar o mesmo código em diferentes sistemas operacionais.
 
+</p>
+        <img src="/projeto_Senai---Haida/projetoHaida/paginas/images.linguagens/java.png" alt="imagem do js"
+            class="language-image">
+        <h3 class="download-title">Abaixo segue os links</h3>
+        <div class="download-list">
+            <a class="download-btn" href="./pdfsTrilhas/java.pdf" download="java.pdf">Trilha</a>
+            <a class="download-btn"
+                href="https://youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR&si=ptTk8DO0A9Sjw1KI"
+                target="_blank">Playlist</a>
+            <a class="download-btn" href="./glossarios.linguagens/Glossario_C++.pdf"
+                download="Glossario_C++.pdf">Glossário</a>
+        </div>
     </main>
-    <h1>hello, javascript</h1>
-    <script src="/arquivos js/Retorno-haida.js"></script>
+    <script src="/projeto_Senai---Haida/projetoHaida/arquivos js/Retorno-haida.js"></script>
+    <script src="/projeto_Senai---Haida/projetoHaida/arquivos js/downloadpdfs.js"></script>
 </body>
 
 </html>
